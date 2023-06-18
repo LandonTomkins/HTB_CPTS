@@ -1,0 +1,6 @@
+USEd to enumerate shares on a SMB server
+
+FLAGS:
+    - -L retrieve a list of available shares on remote host
+    - -N suppresses the password prompt
+    

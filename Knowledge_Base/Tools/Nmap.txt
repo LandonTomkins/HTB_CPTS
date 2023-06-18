@@ -1,0 +1,14 @@
+Nmap will conduct a TCP scan unless specifically requested to do a UDP scan
+
+PORT: shows the active ports if any
+STATE: confirms that the ports are open
+    - a filtered stats might mean a firewall is filtering what can connection
+SERVICE: service's name
+
+FLAGS:
+    - sC gets more details about the services
+    - sV version scan 
+    - -p- tell Nmap to scan all 65,535 ports
+    - --script <script name> will run a specified script
+    - -p <port> specific port
+    

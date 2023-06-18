@@ -1,0 +1,60 @@
+JavaScript Deobfuscation
+
+
+
+
+Tools to obfuscate code
+
+	This makes code harder to read while keeping the same functionality
+	Javascript minifier - makes code one line
+	beautifyTools
+	https://obfuscator.io - allows for more settings
+
+
+
+
+Tools to deobfuscate code
+
+	Jsnice
+	Prettier.io
+	Beautifier.io
+	Code analysis
+
+
+
+
+Code variables
+
+	Variables starting with xhr create XMLHttpRequest
+		-XMLHttpRequest are async methods to transmit HTTP request from web browser to a webserver. 
+		It is a component of Ajax programming
+		
+		-Xhr.open opens a POST or GET request to a given URL path
+
+		-Xhr.send sends the request
+
+
+
+
+Common text encoding methods
+
+	-Base64
+		-Usually used to reduce the use os special character
+	
+	SPOTTING BASE64
+		-They only contain alpha numeric characters
+		= is used for padding
+		-The length always has to be a multiples of 4 meaning if a string is 3 characters long a = will be added
+
+		To encode using base64 use | base64 in cli
+		If we want to decode use | base64 -d
+
+	Hex
+		-Uses ASCII values for the characters
+		-Any hex string will be comprised of only 16 characters 0-9 and a-f
+
+		-To encode using hex add | xxd -p
+		-To decode use | xxd -p -r
+
+	Rot13
+		-Caesar cipher just shift the letters by a given offset

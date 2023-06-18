@@ -1,0 +1,25 @@
+cURL
+
+Command line tool for making http request
+
+Use the -0 flag to download the page content use -o flag to specify file name
+
+To skip the SSL certificate check us -k flag
+
+To view the full HTTP request and HTTP response use the -v (verbose) flag
+
+To only see response headers use -I or -i for both headers
+
+To set request headers  use the -H flag
+
+To add data to curl use -d
+
+To send post request use -X POST
+
+To follow redirection use -L
+
+To se a cookie use -b flag
+
+To get an output in JSON format use | jq
+
+To silent any unneeded curl output use -s

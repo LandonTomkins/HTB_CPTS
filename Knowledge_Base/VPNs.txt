@@ -1,0 +1,18 @@
+Virtual Private Network (VPN)
+
+    - Allows for the private connection to an internal Network
+        -Can be a remote connection
+    - VPNs provide privacy and security by encrypting communication over the cannel to prevent eavesdropping
+
+How VPNs work:
+
+    - Creates the connection from the VPN private server insead of out internet service provider(ISP)
+    - data originates from the VPN server
+
+Types of VPNs:
+
+    - client-based VPN
+        - uses the clients own hardware to establish the connection
+    - SSL VPN
+        - uses the web browser as the VPN Client.
+        - can be configured to only allow web-base appilcations like email and intranet sites

@@ -1,0 +1,39 @@
+What is a shell?
+    - Shell on Linux is a program that takes user keyboard inputs and passes these to the originates
+
+Types of Schell connections:
+    - Reverse Shell:
+        - initiates a connection back to a "listener" on our attack box
+    
+    - Bind Shell:
+        - "Binds" to a specific port on the target host and waits for a connection from out attack box
+
+    - Web Shell:
+        - runs OS command vis the web browser
+        - can be used to run the file upload vulnerability
+
+
+What is a PORT?
+    - virtual points where connection begin and encoding
+
+Two catagories of ports:
+    - Transmission Control Protocol (TCP)
+        - connection oriented meaning client and server connection must be established before data con be sent
+    - User Datagram Protocol (UDP):
+        - connectionless communication there is no handshake
+
+Wellknown Ports:
+    - 20/21(TCP)    protocol: FTP
+    - 22(TCP)       protocol: SSH
+    - 23(TCP)       protocol: Telnet
+    - 25(TCP)       protocol: SMTP
+    - 80(TCP)       protocol: HTTP
+    - 161(TCP/UDP)  protocol: SNMP
+    - 389(TCP/UDP)  protocol: LDAP
+    - 443(TCP)      protocol: SSL/TLS(HTTPS)
+    - 445(TCP)      protocol: SMB
+    - 3389(TCP)     protocol: responds
+
+What is a Web-server?
+    - handles all of the HTTP traffic from the client-side browser, routes it to the request destination pages, responds to the client-side browser
+    - Usually run on TCP ports 80 or 443

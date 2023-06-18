@@ -1,0 +1,16 @@
+Service Scanning
+    - the action of scanning a maching to see which services are running
+
+How to scan
+    - use Nmap
+
+Server Message Block (SMB)
+    - provides many vectors for verical and lateral movement
+
+Shares:
+    - allows users and administrators to share folders and make the accessible remotely by other users
+    - A tool can can enumerate these shares is smbclient
+
+SNMP:
+    - provides information and stats about a router or device
+    

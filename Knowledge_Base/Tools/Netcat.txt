@@ -1,0 +1,10 @@
+NetCat:
+    - netcat or ncat or nc 
+    - utility for interacting with TCP/UDP ports
+    - primary ussage is for connection to shells
+        '''
+            $ netcat 10.10.10.10 22 (22 is the port)
+            
+            SSH-2.0-OpenSSH_8.4p1 Debian-3
+        '''
+        - fromt this we get the "banner" for what is running on port 22

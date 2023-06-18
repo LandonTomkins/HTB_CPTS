@@ -1,0 +1,6 @@
+Terminal multiplexer (tmux)
+    - allows for multiple window within one terminal and jumping between them
+
+controls:
+    - to open a new window crt+b
+    

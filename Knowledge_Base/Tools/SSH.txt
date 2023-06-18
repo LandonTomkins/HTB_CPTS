@@ -1,0 +1,14 @@
+Secure shell (SSH)
+    - run on port 22 by default
+    - provides useres suh as system administrators a secure way to access and computer remotely
+    - 
+SSH commands:
+    - by using the username@remote server IP we can login
+    
+        '''
+            $ ssh Bob#10.10.10.10
+
+            Bob@remotehost's password: ********
+
+            Bob@remotehost# (successful login)
+        '''

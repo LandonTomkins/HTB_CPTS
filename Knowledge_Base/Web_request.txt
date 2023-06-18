@@ -1,0 +1,65 @@
+Web Request
+
+HyperText Transfer Protocol (HTTP)
+	Application-level protocol used to access the World Wide Web resources
+	Hypertext stand for text containing links to other resources
+	HTTP communication consists of client and a server
+	The client request and server responds
+	The default port is 80
+	
+URL
+	Uniform Resource Locator
+URL Stucture
+	Scheme: used to identify the protocol being accessed
+	User Info: optional component the contains the credential used to authenticate the host
+	Host: signifies the location
+	Port: HTTP default port 80 HTTPS default port 443
+	Path: points the the resource being accessed
+	Query String: starts with ? and a parameter multiple parameters can be separated by &
+	Fragments: processed by the browsers on the client side to locate secions withing the resource
+	
+HTTP Flow
+
+ Our browsers usually first look up records in the local '/etc/hosts' file, and if the requested domain does not exist within it, then they would contact other DNS servers. We can use the '/etc/hosts' to manually add records to for DNS resolution, by adding the IP followed by the domain name.
+
+
+
+HTTPS
+HTTPS Flow
+
+
+
+HTTP Headers
+Headers have the following categories
+General Headers
+Used in both HTTP request and response
+Describe the message rather than its contents
+
+Entity Headers
+Use for both request and response
+Used to describe the content transferred by a message
+Usually found with POST or PUT request
+
+Request Headers
+HTTP request
+
+Response headers
+
+Security headers
+Used the specify certain rules and polocies
+
+HTTP Post request
+When web application need to transfer file or move parameters from the URL they use POST
+POST places the parameters within the HTTP request body
+Benefits:
+Lack of logging: POST request can transfer large files it would not be efficient for the request to use the URL for this
+Less encoding requirements: URL’s are designed to be used with letters while POST request can place binary into the body of the request
+More data can be sent: There is a max length of URL’s
+CRUD
+Create: POST
+Read: GET
+Update: PUT
+Delete: DELETE
+WEB Browser tools
+Ctr+shift+e brings up the dev tool
+Crt+u brings up the source code
