@@ -8,3 +8,16 @@ NetCat:
             SSH-2.0-OpenSSH_8.4p1 Debian-3
         '''
         - fromt this we get the "banner" for what is running on port 22
+
+    FLAGS:
+        - -l listen mode wait for conneciton to us
+        - -v verbose mode
+        - -n disable DNS resolution and only connect from/to IP's to speed up connection
+        - -p port
+
+    USAGES:
+
+        TO OPEN A LISTENING PORT:
+            '''
+                nc -lvnp <port to open>
+            '''
