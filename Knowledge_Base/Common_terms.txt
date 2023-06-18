@@ -1,16 +1,4 @@
-What is a shell?
-    - Shell on Linux is a program that takes user keyboard inputs and passes these to the originates
 
-Types of Schell connections:
-    - Reverse Shell:
-        - initiates a connection back to a "listener" on our attack box
-    
-    - Bind Shell:
-        - "Binds" to a specific port on the target host and waits for a connection from out attack box
-
-    - Web Shell:
-        - runs OS command vis the web browser
-        - can be used to run the file upload vulnerability
 
 
 What is a PORT?
