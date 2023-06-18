@@ -1,0 +1,6 @@
+FTP
+
+USAGE:
+    '''
+        ftp -p <ipadress>
+    '''

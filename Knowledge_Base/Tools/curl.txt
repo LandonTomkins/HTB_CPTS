@@ -23,3 +23,5 @@ To se a cookie use -b flag
 To get an output in JSON format use | jq
 
 To silent any unneeded curl output use -s
+
+for banner grapping with curl us -IL

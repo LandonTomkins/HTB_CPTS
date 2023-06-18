@@ -4,3 +4,19 @@ FLAGS:
     - -L retrieve a list of available shares on remote host
     - -N suppresses the password prompt
     
+    '''
+        smbclient -N -L \\\\10.129.42.253
+
+        returns:
+                    Sharename       Type      Comment
+	                ---------       ----      -------
+	                print$          Disk      Printer Drivers
+	                users           Disk      
+	                IPC$            IPC       IPC Service (gs-svcscan server (Samba, Ubuntu))
+                SMB1 disabled -- no workgroup available
+
+        
+        to access users share:
+
+            smbclient -U bob \\\\10.129.42.253\\users
+    '''

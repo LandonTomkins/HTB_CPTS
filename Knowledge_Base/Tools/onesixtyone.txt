@@ -1,0 +1,11 @@
+USES:
+    can be used to brute force a community string for smb servers
+
+
+USAGE:
+    '''
+        onesixtyone -c dict.txt 10.129.42.254
+
+        returns:
+                    10.129.42.254 [public] Linux gs-svcscan 5.4.0-66-generic #74-Ubuntu SMP Wed Jan 27 22:54:38 UTC 2021 x86_64
+    '''
