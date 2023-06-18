@@ -1,0 +1,39 @@
+When doing service scanning you will often run into web servers running on ports
+
+ - when a webserver is discovered it is always worth checking to see if we can uncover any hidden files or directories
+
+ - sometimes this can lead to finding things not intenede for the public
+
+ TOOLS TO USE:
+    - GoBuster
+    - ffuf
+
+- in this case a wordpress installation was found
+- wordpress is a Content Management System (CMS)
+- this has enormous attack potential
+    - for the example the wordpress is still in setup mode which can allow for remote code execution (REC)
+
+
+
+DNS subdomain enumeration
+
+TOOLS:
+    - Gobuster with dns flag
+
+
+
+For banner grabbing we can use:
+    - curl
+    - netcat
+    - nmap
+    - eyewitness
+
+OTHER TOOLS:
+    - whatweb can extrac the version of webservers, supporting frameworks, and applications
+
+CERTIFICATES:
+    - SSL/TLS certificates are another potentially valuable source of information
+
+ROBOTS.txt
+    - purpose is to instruct search engine web crawlers to which resources can and cannot be accessed for indexing
+    - it can provide infromation about the location of private files and admin pages
