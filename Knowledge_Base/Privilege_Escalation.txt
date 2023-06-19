@@ -1,0 +1,31 @@
+PrivEsc Checklist:
+    - once a box is compromised we want to throughly enumerate the box to find potential vulnerabilities to incease privilege level
+    - HackTricks has a good checklist for both windows and linux privilege escalation
+
+    - try sudo -l first and see what commands can be executed
+        - look at the commands and check with GTFOBins website for commands
+        - you can use sudo -u <user> command to execute sudo commands as a different user
+
+THINGS TO LOOK FOR FROM PRIVESC SCRIPT OUTPUTS:
+    - outdated kernels or OS 
+    - Vulnerable Software
+    - Scheduled Tasks
+        - cron job for linux
+            - if we can write to these files we may be able to edit the cron jobs and add a new job or execute malicious Software
+                - /etc/crontab
+                - /etc/cron.d
+                - /var/spool/cron/crontabs/root 
+
+
+    - exposed credentials
+        - look for files that are readable and look for credentials
+
+
+    - SSH Keys
+        - found in /home/user/.ssh/id_rsa
+        - /root/.ssh/id_rsa
+        - if public keys are found we can use them to login to the machine
+        - if we are able to write to them then we could put our public keys
+            - to generate our own key use 
+                - ssh-keygen -f key (-f is to specify the output file)
+                - and put the ken in /home/user/.ssh/authorized_keys
